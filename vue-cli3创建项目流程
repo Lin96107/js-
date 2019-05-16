@@ -1,0 +1,39 @@
+安装/更新到最新的node：npm install node -g
+查看node版本： node -v
+安装/更新到最新的npm：npm install npm -g
+查看npm版本： npm -v
+Vue-cli3.0安装/更新：npm install @vue/cli -g
+查看Vue-cli版本： vue -V(大写)
+
+
+新增项目：vue create 项目名(小写英文字母，以-分隔)
+1.default (babel, eslint)默认套餐，提供babel和eslint支持
+2.Manually select features自己去选择需要的功能，提供更多的特性选择。比如如果想要支持 TypeScript ，就应该选择这一项。
+可以使用上下方向键来切换选项。如果只需要 babel 和 eslint 支持，那么选择第一项，就完事了，静静等待 vue 初始化项目。
+
+
+vue-cli 内置支持了8个功能特性，可以多选：使用方向键在特性选项之间切换，使用空格键选中当前特性，使用 a 键切换选择所有，使用 i 键翻转选项。
+
+
+TypeScript 支持使用 TypeScript 书写源码
+Progressive Web App (PWA) Support PWA 支持。
+Router 支持 vue-router 。
+Vuex 支持 vuex 。
+CSS Pre-processors 支持 CSS 预处理器。
+Linter / Formatter 支持代码风格检查和格式化。
+Unit Testing 支持单元测试。
+E2E Testing 支持 E2E 测试。
+
+
+按enter进入下一步，接下来都是对之前每项选项的更详细的选择。
+
+
+运行项目：npm run serve(3.0以上) npm run dev(3.0以下)
+打包项目：npm run build
+
+
+Npm install module_name -S 即 npm install module_name --save 写入dependencies
+Npm install module_name -D 即 npm install module_name --save-dev 写入devDependenciesnpm 
+install module_name -g 全局安装(命令行使用)
+npm install module_name 本地安装(将安装包放在 ./node_modules 下)
+dependencies与devDependencies有什么区别呢？devDependencies 里面的插件只用于开发环境，不用于生产环境dependencies 是需要发布到生产环境的
